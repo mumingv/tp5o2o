@@ -27,5 +27,11 @@ class Category extends Controller
         }
 
         // 把$data提交给model层
+        $res = model('Category')->add($data);
+        if ($res) {
+            $this->success('新增成功');
+        } else {
+            $this->error('新增失败');
+        }
     }
 }
