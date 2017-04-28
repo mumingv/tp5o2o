@@ -13,7 +13,7 @@ class Category extends Model
     public function add($data) {
         $data['status'] = 1;
         //$data['create_time'] = time();
-        $this->save($data);
+        return $this->save($data);
     }
 
     public function getNormalFirstCategory() {

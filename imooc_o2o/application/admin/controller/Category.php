@@ -32,7 +32,6 @@ class Category extends Controller
         //print_r(input('post.'));  // 方法二：推荐
         //print_r(request()->post());  // 方法三：推荐
         $data = input('post.');
-        $data['status'] = 10;
         $validate = validate('Category');
         //if (!$validate->check($data)) {
         if (!$validate->scene('add')->check($data)) {
