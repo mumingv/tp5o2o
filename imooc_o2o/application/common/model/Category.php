@@ -15,4 +15,19 @@ class Category extends Model
         //$data['create_time'] = time();
         $this->save($data);
     }
+
+    public function getNormalFirstCategory() {
+        $data = [
+            'status' => 1,
+            'parent_id' => 0,
+        ];
+
+        $order = [
+            'id' => 'desc',
+        ];
+
+        return $this->where($data)
+            ->order($order)
+            ->select();
+    }
 }
