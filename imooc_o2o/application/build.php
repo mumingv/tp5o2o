@@ -36,5 +36,10 @@ return [
         '__dir__' => ['controller', 'view'],
         'controller' => ['Index', 'Image'],
     ],
+    // 定义TP5示例使用的模块
+    'tpdemo' => [
+        '__dir__' => ['controller', 'view', 'model'],
+        'controller' => ['Basic', 'Arch', 'Config', 'Route', 'Controller', 'Request', 'Database', 'Model', 'View', 'Template', 'Log', 'Debug', 'Validate', 'Other', 'Extend', 'Cli', 'Deploy', 'Appendix'],
+    ],
     // 其他更多的模块定义
 ];

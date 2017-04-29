@@ -22,7 +22,7 @@ return [
     'app_trace'              => false,
     // 应用模式状态
     'app_status'             => '',
-    // 是否支持多模块
+    // 是否支持多模块(单模块的话，模块目录可以省略)
     'app_multi_module'       => true,
     // 入口自动绑定模块
     'auto_bind_module'       => false,
@@ -30,7 +30,7 @@ return [
     'root_namespace'         => [],
     // 扩展函数文件
     'extra_file_list'        => [THINK_PATH . 'helper' . EXT],
-    // 默认输出类型
+    // 默认输出类型(取值: 'html', 'json', 'jsonp', 'view')
     'default_return_type'    => 'html',
     // 默认AJAX 数据返回格式,可选json xml ...
     'default_ajax_return'    => 'json',
@@ -100,7 +100,7 @@ return [
     'url_domain_deploy'      => false,
     // 域名根，如thinkphp.cn
     'url_domain_root'        => '',
-    // 是否自动转换URL中的控制器和操作名
+    // 是否自动转换URL中的控制器和操作名(默认是大小写都会转成对应的正确格式)
     'url_convert'            => true,
     // 默认的访问控制器层
     'url_controller_layer'   => 'controller',
